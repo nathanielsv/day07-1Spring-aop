@@ -8,21 +8,28 @@ import com.wanho.java146.pojo.MoneyLimit;
 import com.wanho.java146.pojo.TransferLog;
 import com.wanho.java146.utils.JDBCutil;
 import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.Ordered;
 import org.springframework.stereotype.Component;
 
 import java.sql.SQLException;
 import java.util.Date;
 
 @Component
-public class TransferLimitAdvice {
+@Aspect
+public class TransferLimitAdvice implements Ordered {
 
     @Autowired
     private TransferLimitDAO transferLimitDAO;
     @Autowired
     private CustomerDAO customerDAO;
+    @Pointcut("execution(* com.wanho.java146.service.impl.CustomerServiceImpl.transfer(..)))")
+    private void good(){}
 
-
+    @Around("good()")
     public Object doTransferLimit(ProceedingJoinPoint pjp) throws SQLException {
         Object[] pjpArgs = pjp.getArgs();
         TransferLog transferLog = new TransferLog();
@@ -63,4 +70,8 @@ public class TransferLimitAdvice {
     }
 
 
+    @Override
+    public int getOrder() {
+        return 100;
+    }
 }

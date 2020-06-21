@@ -6,22 +6,30 @@ import com.wanho.java146.pojo.TransferLog;
 import com.wanho.java146.utils.JDBCutil;
 import com.wanho.java146.utils.NOutil;
 import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.core.Ordered;
 import org.springframework.stereotype.Component;
 
 import java.sql.SQLException;
 import java.util.Date;
 
 @Component
-public class TransferLogAdvice {
+@Aspect
+public class TransferLogAdvice implements Ordered {
     @Autowired
     private TransferLogDAO transferLogDAO;
     @Autowired
     private JDBCutil jdbCutil;
 
+    @Pointcut("execution(* com.wanho.java146.service.impl.CustomerServiceImpl.transfer(..)))")
+    private void hi(){}
 
 
+    @Around("hi()")
     public Object doTransferLog(ProceedingJoinPoint pjp) throws SQLException {
         TransferLog transferLog = new TransferLog();
         System.out.println("日志执行");
@@ -58,5 +66,10 @@ public class TransferLogAdvice {
 
         return null;
 
+    }
+
+    @Override
+    public int getOrder() {
+        return 200;
     }
 }

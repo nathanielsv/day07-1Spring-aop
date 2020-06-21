@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85b06f23-3e8c-419b-84ff-c5fb4cd24e99" name="Default Changelist" comment="" />
+    <list default="true" id="85b06f23-3e8c-419b-84ff-c5fb4cd24e99" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/day07-01-spring-ioc-xml/com/wanho/java146/proxy/TransferProxy$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/day07-01-spring-ioc-xml/com/wanho/java146/proxy/TransferProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/day07-01-spring-ioc-xml/META-INF/day07-01-spring-ioc-xml.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/day07-01-spring-ioc-xml/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/day07-01-spring-ioc-xml/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/day07-01-spring-ioc-xml/com/wanho/java146/advice/TransferLimitAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/day07-01-spring-ioc-xml/com/wanho/java146/advice/TransferLimitAdvice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/day07-01-spring-ioc-xml/com/wanho/java146/advice/TransferLogAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/day07-01-spring-ioc-xml/com/wanho/java146/advice/TransferLogAdvice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/day07-01-spring-ioc-xml/com/wanho/java146/transaction/TransactionProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/day07-01-spring-ioc-xml/com/wanho/java146/transaction/TransactionProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/day07-01-spring-ioc-xml/META-INF/day07-01-spring-ioc-xml.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/day07-01-spring-ioc-xml/com/wanho/java146/service/impl/CustomerServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/day07-01-spring-ioc-xml/com/wanho/java146/service/impl/CustomerServiceImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wanho/java146/advice/TransferLimitAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wanho/java146/advice/TransferLimitAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wanho/java146/advice/TransferLogAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wanho/java146/advice/TransferLogAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wanho/java146/transaction/TransactionProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wanho/java146/transaction/TransactionProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/wanho/java146/service/impl/CustomerServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/wanho/java146/service/impl/CustomerServiceImplTest.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +35,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -28,16 +48,18 @@
     </option>
   </component>
   <component name="ProjectId" id="1dTHZBbwFvGiU3SFddf854VCeY2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Java教学视频/第四阶段-框架/day08/day08-03-customer-aop-xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
@@ -176,12 +198,27 @@
       <workItem from="1592489847605" duration="3517000" />
       <workItem from="1592611565550" duration="4877000" />
       <workItem from="1592616564619" duration="7746000" />
-      <workItem from="1592624570648" duration="20266000" />
+      <workItem from="1592624570648" duration="22367000" />
+      <workItem from="1592730690348" duration="612000" />
+      <workItem from="1592745944815" duration="1612000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

@@ -18,6 +18,6 @@ public class CustomerServiceImplTest {
 
     @Test
     public void transfer() {
-        customerService.transfer("c5","c1",5000f);
+        customerService.transfer("c3","c2",20000f);
     }
 }

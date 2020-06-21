@@ -3,17 +3,26 @@ package com.wanho.java146.transaction;
 
 import com.wanho.java146.utils.JDBCutil;
 import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.Ordered;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import java.sql.Connection;
 import java.sql.SQLException;
 
 @Component
-public class TransactionProxy {
+@Aspect
+public class TransactionProxy implements Ordered {
 
     @Autowired
     private JDBCutil jdbCutil;
+
+    @Pointcut("execution(* com.wanho.java146.service.impl.CustomerServiceImpl.transfer(..))")
+    private void hello(){}
 
     public void beginTransaction(){
         Connection connection = jdbCutil.getConnection();
@@ -45,6 +54,7 @@ public class TransactionProxy {
     }
 
 
+    @Around("hello()")
     public Object aroundTransaction(ProceedingJoinPoint pjp){
 
         System.out.println("事物执行。。。。。。。。");
@@ -63,4 +73,8 @@ public class TransactionProxy {
     }
 
 
+    @Override
+    public int getOrder() {
+        return 300;
+    }
 }

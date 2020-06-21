@@ -21,22 +21,22 @@
     <bean id="queryRunner" class="org.apache.commons.dbutils.QueryRunner">
         <constructor-arg  ref="dataSource"/>
     </bean>
-    <aop:config>
+    <aop:aspectj-autoproxy/>
+<!--    <aop:config>-->
 <!--   aop:aspect 增强类  order：执行顺序   -->
-        <aop:aspect ref="transactionProxy" order="300">
-            <aop:pointcut id="transactionPointcut" expression="(execution(* com.wanho.java146.service.impl.CustomerServiceImpl.transfer(..)))"/>
+<!--        <aop:aspect ref="transactionProxy" order="300">-->
+<!--            <aop:pointcut id="transactionPointcut" expression="(execution(* com.wanho.java146.service.impl.CustomerServiceImpl.transfer(..)))"/>-->
 <!--            <aop:before method="beginTransaction" pointcut-ref="transactionPointcut"/>-->
 <!--            <aop:after-returning method="commitTransaction" pointcut-ref="transactionPointcut"/>-->
 <!--            <aop:after-throwing method="rollbackTransaction" pointcut-ref="transactionPointcut"/>-->
-            <aop:around method="aroundTransaction" pointcut-ref="transactionPointcut"/>
-        </aop:aspect>
-        <aop:aspect ref="transferLogAdvice" order="200">
-            <aop:around method="doTransferLog" pointcut="(execution(* com.wanho.java146.service.impl.CustomerServiceImpl.transfer(..)))"/>
-        </aop:aspect>
-        <aop:aspect ref="transferLimitAdvice" order="100">
-            <aop:around method="doTransferLimit" pointcut="(execution(* com.wanho.java146.service.impl.CustomerServiceImpl.transfer(..)))"/>
-        </aop:aspect>
-
-    </aop:config>
+<!--            <aop:around method="aroundTransaction" pointcut-ref="transactionPointcut"/>-->
+<!--        </aop:aspect>-->
+<!--        <aop:aspect ref="transferLogAdvice" order="200">-->
+<!--            <aop:around method="doTransferLog" pointcut="(execution(* com.wanho.java146.service.impl.CustomerServiceImpl.transfer(..)))"/>-->
+<!--        </aop:aspect>-->
+<!--        <aop:aspect ref="transferLimitAdvice" order="100">-->
+<!--            <aop:around method="doTransferLimit" pointcut="(execution(* com.wanho.java146.service.impl.CustomerServiceImpl.transfer(..)))"/>-->
+<!--        </aop:aspect>-->
+<!--    </aop:config>-->
 
 </beans>
