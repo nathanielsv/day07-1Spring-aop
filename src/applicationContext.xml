@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:utils="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:bean="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+  http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/context/spring-context.xsd
+  http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <bean:component-scan base-package="com.wanho.java146"/>
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="${jdbc.driverClassName}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+     </bean>
+    <bean id="queryRunner" class="org.apache.commons.dbutils.QueryRunner">
+        <constructor-arg  ref="dataSource"/>
+    </bean>
+    <aop:config>
+<!--   aop:aspect 增强类  order：执行顺序   -->
+        <aop:aspect ref="transactionProxy" order="300">
+            <aop:pointcut id="transactionPointcut" expression="(execution(* com.wanho.java146.service.impl.CustomerServiceImpl.transfer(..)))"/>
+<!--            <aop:before method="beginTransaction" pointcut-ref="transactionPointcut"/>-->
+<!--            <aop:after-returning method="commitTransaction" pointcut-ref="transactionPointcut"/>-->
+<!--            <aop:after-throwing method="rollbackTransaction" pointcut-ref="transactionPointcut"/>-->
+            <aop:around method="aroundTransaction" pointcut-ref="transactionPointcut"/>
+        </aop:aspect>
+        <aop:aspect ref="transferLogAdvice" order="200">
+            <aop:around method="doTransferLog" pointcut="(execution(* com.wanho.java146.service.impl.CustomerServiceImpl.transfer(..)))"/>
+        </aop:aspect>
+        <aop:aspect ref="transferLimitAdvice" order="100">
+            <aop:around method="doTransferLimit" pointcut="(execution(* com.wanho.java146.service.impl.CustomerServiceImpl.transfer(..)))"/>
+        </aop:aspect>
+
+    </aop:config>
+
+</beans>
