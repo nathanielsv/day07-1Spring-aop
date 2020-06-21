@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/day07-01-spring-ioc-xml.iml" filepath="$PROJECT_DIR$/day07-01-spring-ioc-xml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day08-01-spring-aop-anno.iml" filepath="$PROJECT_DIR$/day08-01-spring-aop-anno.iml" />
     </modules>
   </component>
 </project>

@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85b06f23-3e8c-419b-84ff-c5fb4cd24e99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/day07-01-spring-ioc-xml/com/wanho/java146/proxy/TransferProxy$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/day07-01-spring-ioc-xml/com/wanho/java146/proxy/TransferProxy.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/day07-01-spring-ioc-xml/META-INF/day07-01-spring-ioc-xml.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/day07-01-spring-ioc-xml/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/day07-01-spring-ioc-xml/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/day07-01-spring-ioc-xml/com/wanho/java146/advice/TransferLimitAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/day07-01-spring-ioc-xml/com/wanho/java146/advice/TransferLimitAdvice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/day07-01-spring-ioc-xml/com/wanho/java146/advice/TransferLogAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/day07-01-spring-ioc-xml/com/wanho/java146/advice/TransferLogAdvice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/day07-01-spring-ioc-xml/com/wanho/java146/transaction/TransactionProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/day07-01-spring-ioc-xml/com/wanho/java146/transaction/TransactionProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/day07-01-spring-ioc-xml/META-INF/day07-01-spring-ioc-xml.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/day07-01-spring-ioc-xml/com/wanho/java146/service/impl/CustomerServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/day07-01-spring-ioc-xml/com/wanho/java146/service/impl/CustomerServiceImplTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wanho/java146/advice/TransferLimitAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wanho/java146/advice/TransferLimitAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wanho/java146/advice/TransferLogAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wanho/java146/advice/TransferLogAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wanho/java146/transaction/TransactionProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wanho/java146/transaction/TransactionProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/wanho/java146/service/impl/CustomerServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/wanho/java146/service/impl/CustomerServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day07-01-spring-ioc-xml.iml" beforeDir="false" afterPath="$PROJECT_DIR$/day08-01-spring-aop-anno.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +85,7 @@
   <component name="RunManager" selected="JUnit.CustomerServiceImplTest.transfer">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wanho.java146.utils.Test" />
-      <module name="day07-01-spring-ioc-xml" />
+      <module name="day08-01-spring-aop-anno" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.wanho.java146.utils.*" />
@@ -111,7 +97,7 @@
       </method>
     </configuration>
     <configuration name="CustomerServiceImplTest.transfer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day07-01-spring-ioc-xml" />
+      <module name="day08-01-spring-aop-anno" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.wanho.java146.service.impl.*" />
@@ -127,7 +113,7 @@
       </method>
     </configuration>
     <configuration name="CustomerServiceTest.transfer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day07-01-spring-ioc-xml" />
+      <module name="day08-01-spring-aop-anno" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.wanho.java146.service.*" />
@@ -143,7 +129,7 @@
       </method>
     </configuration>
     <configuration name="TransferLimitDAOImplTest.selectTransferLimit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day07-01-spring-ioc-xml" />
+      <module name="day08-01-spring-aop-anno" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.wanho.java146.dao.impl.*" />
@@ -159,7 +145,7 @@
       </method>
     </configuration>
     <configuration name="TransferLogDAOImplTest.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day07-01-spring-ioc-xml" />
+      <module name="day08-01-spring-aop-anno" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.wanho.java146.dao.impl.*" />
@@ -170,6 +156,53 @@
       <option name="MAIN_CLASS_NAME" value="com.wanho.java146.dao.impl.TransferLogDAOImplTest" />
       <option name="METHOD_NAME" value="insert" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="day08-01-spring-aop-anno" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="day08-01-spring-aop-anno" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -200,8 +233,16 @@
       <workItem from="1592616564619" duration="7746000" />
       <workItem from="1592624570648" duration="22367000" />
       <workItem from="1592730690348" duration="612000" />
-      <workItem from="1592745944815" duration="1612000" />
+      <workItem from="1592745944815" duration="2391000" />
     </task>
+    <task id="LOCAL-00001" summary="银行转账-限额不超过2w，注解版">
+      <created>1592747601547</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592747601547</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +260,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="银行转账-限额不超过2w，注解版" />
+    <option name="LAST_COMMIT_MESSAGE" value="银行转账-限额不超过2w，注解版" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
